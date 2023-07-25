@@ -1,0 +1,240 @@
+@font-face {
+    font-family: 'o';
+    src: url('orange\ juice\ 2.0.ttf');
+    
+}
+@font-face {
+    font-family: 'g';
+    src: url('Gilroy-Black.ttf');
+    
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    background-color:#E8E6E5 ;
+    font-family: g;
+   
+
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+    width: 100vw;
+}
+
+#container {
+    width: 90%;
+    height: 80%;
+    background-image: url(blurredblue.jpg);
+    background-color: #F9FAFA;
+    /* background-color: black; */
+    border-radius: 30px 30px; 
+    overflow: hidden; /* Add this to hide any content outside the rounded corners */
+
+   
+}
+
+#nav {
+    width: 100%;
+    height: 10vh;
+    /* background-color: black */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: transparent;
+    /* background-color: #F9FAFA; */
+}
+
+
+#navleft {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: black; */
+    gap: 40px;
+    /* width: 60%; */
+    
+}
+
+#navleft img {
+    width: 60px;
+    /* mix-blend-mode: hard-light; */
+    /* mix-blend-mode: color-burn; */
+    margin-left: 40px;
+    align-items: center;
+    margin-top: 10px;
+}
+
+#navleft a {
+    text-decoration: none;
+    /* color: #00A76B; */
+    color:#90A5A0;
+}
+
+
+#navright {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-right: 20px;
+}
+
+
+#navright button {
+    padding: 10px 20px;
+    border-radius:20px;
+    font-weight: bold;
+    color: #90A5A0 ;
+    background-color: #00A76B;
+    margin-left: 10px;
+    margin-right: 20px;
+    text-align: center;
+    cursor: pointer;
+   
+
+} 
+
+/* logo gadbad kar raha tha  */
+
+/* #navright #btn1{
+    background-color: #FAF7F6 !important;
+    color: #00A76B !important;
+    mix-blend-mode: normal;
+}
+
+#navright #btn2 {
+    background-color: #00A76B !important;
+    color: #FAF7F6 !important;
+    mix-blend-mode: normal;
+} */
+#navright #btn1 {
+    background-color: #fff;
+    color: #00A76B;
+    border: 1px solid #aabcbc;
+   
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#navright #btn2 {
+    background-color: #00A76B;
+    color: #FAF7F6;
+    border: 1px solid transparent;
+
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#navright #btn1:hover {
+    background-color: #00A76B;
+    color: #FAF7F6;
+}
+
+#navright #btn2:hover {
+    background-color: #fff;
+    color: #00A76B;
+    border: 1px solid #aabcbc;
+}
+
+
+
+
+
+#main {
+    display: flex; /* Added this to make it a flex container */
+    height: 80%; /* Set the height to take available space */
+}
+
+.left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+    flex: 1;
+    /* background-color: #F9F9F8; */
+    background-color: transparent;
+    /* background-color: #000000; */
+    margin: 30px;
+    position: relative;
+}
+
+.left h1 {
+    color: black;
+    font-size: 4vw;
+    font-family: o;
+    position: absolute;
+    top: 10%;
+}
+.left h1 span {
+    color:#90A5A0;
+}
+
+
+
+.left p {
+    color: black;
+    font-size: 1vw;
+    /* text-align:center; */
+    /* margin-left: 152px;  */
+    position: absolute;
+    left: 20%;
+    font-size: 12px;
+    top: 75%;
+    font-family: g;
+    /* margin: 10px 0px; */
+}
+
+.left button {
+    background-color: #00A76B;
+    color: #FAF7F6;
+    border: 1px solid transparent;
+    padding: 10px 20px;
+    border-radius:20px;
+    font-weight: bold;
+    cursor: pointer;
+    position: absolute;
+    bottom: 3%;
+    cursor: pointer;
+    /* margin: 30px 0px; */
+
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+
+.right {
+    flex: 1;
+    position: relative;
+    /* mix-blend-mode: normal; */
+    /* width: 50%; */
+    /* width: 100%; */
+
+    
+    /* background-color: #F9F9F8; */
+    
+}
+ .right img{
+    /* background-image: url(img.jpg); */
+    background-size:cover;
+    width: 100%;
+    border-radius: 30px 0 0 30px;
+    margin-top: 40px;
+    position: absolute;
+    right: 7%;
+    bottom: 5%;
+    mix-blend-mode: hard-light;
+    background-color: transparent;
+ }
+
+
+
